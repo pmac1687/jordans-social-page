@@ -1,0 +1,40 @@
+body {
+    background-image: url('media/addy.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@font-face {
+    font-family: '18_holes_brknormal';
+    src: url('18holes-webfont.woff2') format('woff2'),
+         url('18holes-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+h1 {
+    color: rgb(255, 2, 129);
+    font-family: DejaVu Serif ;
+}
+#title {
+    font-family: '18_holes_brknormal' ;
+    background-color: yellow;
+    font-style: italic ;
+    color: rgb(178, 77, 224);
+}
+button {
+    height: 40px;
+    width: 80px;
+}
+#draggable {
+    width: 150px;
+    height: 150px;
+    padding: 0.5em;
+}
+#create {
+    font-family: '18holes-webfont.woff2';
+    border-radius: 60%;
+    border-style: double;
+    background-color: rgb(108, 0, 130);
+    color: white;
+    box-shadow:  5px 5px 0px 0px rgb(229, 231, 96);
+    border-color: hotpink;
+}

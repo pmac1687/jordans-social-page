@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    {% load static %}
+    <meta name='viewport' content="width=device-width, initial-scale=1" />
+    <title>Jordan's Space</title>
+    <link rel='stylesheet' href="{% static 'style.css' %}"/>
+    <script src="{% static 'jquery-3.5.1.js' %}"></script>
+    <script src="{% static 'script.js' %}"></script>
+    <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
+    <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+</head>
+<body  id='main'>
+    
+    <div id='main' >
+        <div id='root'></div>
+        <div>
+            <h1 id='title'>Welcome to Jordan's Space</h1>
+        </div>
+        <div style='background-color: yellow;'>
+            <button id='create' onclick='newSection()'>New Section</button>
+            <button id='create' onclick='createNew("h1")'>create Title</button>
+            <button id='create' onclick='createNew("p")'>Add Article</button>
+            <button id='create' onclick='createNew("img")'>Add Image</button>
+            <button id='create' onclick='createMedia("video")'>Add Video</button>
+        </div>
+        {% for item in additions %}
+            <h1 id='thing' >{{ item }}</h1>
+        {% endfor %}
+    </div>
+    
+    
+    
+
+</body>
+<script type="text/javascript">
+    const main = document.getElementById('main');
+    {% for item in additions %}
+        var tag = '{{ item.tag }}';
+        var adding = document.createElement(tag);
+        adding.innerHTML = '{{ item.html }}';
+        main.appendChild(adding)
+    {% endfor %}
+    const addition_instance = '{{ create }}';
+    const thing = '{{ new.html }}';
+    thing = 'something special';
+    '{{ new.save() }}'
+    const new = document.createElement('h1');
+    new.innerHTML = '{{ new.html }}';
+    main.appendChild(new) 
+    
+</script>
+</html>
