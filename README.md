@@ -4,4 +4,4 @@ for one user. By clicking the buttons and following the prompt you can create ne
 on the page as follows 'p', 'img', 'h1'. you can also expand the page to allow for more room.
 the site is served live at
 
-<a href='pmac1687.pythonanywhere.com'>pmac1687.pythonanywhere.com</a>
+<a href='http://pmac1687.pythonanywhere.com'>pmac1687.pythonanywhere.com</a>
