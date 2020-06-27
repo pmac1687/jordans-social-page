@@ -35,11 +35,14 @@
 
 </body>
 <script type="text/javascript">
+    //this is parent element that new element attaches to
     const main = document.getElementById('main');
     {% for item in additions %}
         var tag = '{{ item.tag }}';
+      //this creates new element and adds props to new element
         var adding = document.createElement(tag);
         adding.innerHTML = '{{ item.html }}';
+     //this appends new element to base html in browser 
         main.appendChild(adding)
     {% endfor %}
     const addition_instance = '{{ create }}';
